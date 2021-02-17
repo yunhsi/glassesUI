@@ -11297,18 +11297,6 @@ aside .mark:after {
   background-color: #dc3545;
 }
 
-@media (max-width: 768px) {
-  main {
-    padding-left: 40px !important;
-  }
-}
-
-@media (max-width: 576px) {
-  main {
-    padding: 0px !important;
-  }
-}
-
 main .card {
   padding: 20px;
   height: 100%;
