@@ -1,0 +1,35 @@
+@import '../helper/mixins';
+html,body{
+	height: 100%;
+	font-family: 'Noto Sans TC', sans-serif;
+	table{
+		td{
+			padding: 10px !important;
+		}
+	}
+	a{
+		text-decoration: none !important;
+		color: #000;
+		&:hover{
+			color: #000;
+		}
+	}
+	a,
+	button,
+	input:focus,
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus{   
+	border-color: $danger;
+	box-shadow: none;
+	outline: 0 none;
+	}
+	label{
+		cursor: pointer;
+	}
+	p{
+		margin: 0;
+	}
+}

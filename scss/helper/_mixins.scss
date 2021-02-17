@@ -1,0 +1,25 @@
+$danger:#dc3545;
+$warning:#ffc107;
+$muted:#6c757d;
+$light:#f8f9fa;
+
+@mixin phone {
+    @media (max-width: 576px){
+      @content
+    }
+  }
+  @mixin pad {
+    @media (max-width: 768px){
+      @content
+    }
+  }
+  @mixin pad_pro {
+    @media (max-width: 1024px){
+      @content
+    }
+  }
+  @mixin desktop {
+    @media (max-width: 1200px){
+      @content
+    }
+  }

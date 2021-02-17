@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "helper/mixins";
+
+@import 'components/base';
+@import 'components/layout';
+@import 'components/goTop';
+@import 'components/swiper';
+@import 'pages/index';
+@import 'pages/products';
+@import 'pages/store';
+@import 'pages/product';
+@import 'pages/checkout-1';
+@import 'pages/checkout-2';
+@import 'pages/checkout-success';

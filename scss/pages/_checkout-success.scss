@@ -1,0 +1,17 @@
+@import '../helper/mixins';
+.success-img{
+  background-image: url(../image/charles-deluvio-1-nx1QR5dTE-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  width: 100%;
+  height: 400px;
+  padding-top: 70px;
+  @include pad_pro{
+      height: 350px;
+      background-position: 50% 0%;
+  }
+  @include pad{
+      height: 300px;
+  }
+}

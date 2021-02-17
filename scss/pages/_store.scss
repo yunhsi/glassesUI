@@ -1,0 +1,24 @@
+@import '../helper/mixins';
+.store-text{
+    line-height: 2;
+    position: relative;
+    &:before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        content: "";
+        height: 100%;
+        width: 5px;
+        background-color: $danger;
+    }
+    @include pad{
+        margin-bottom: 50px;
+    }
+}
+
+.map-rwd{
+    @include pad{
+        padding: 0;
+    }
+}

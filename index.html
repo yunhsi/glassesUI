@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVBAR</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faster+One&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="scss/all.css" />
+    <link rel="icon" href="./image/glasses-solid.svg" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-md-5">
+      <button
+        class="navbar-toggler border-0 text-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <a class="navbar-brand mr-lg-4" href="index.html"
+        ><i class="fas fa-glasses pr-1"></i>Navbar</a
+      >
+
+      <ul style="list-style: none; margin: 0; padding: 0" class="order-sm-5">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link text-light position-relative"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><i class="fas fa-shopping-bag"></i
+          ></a>
+          <div class="num">2</div>
+          <div
+            class="dropdown-menu p-3 my-3 border border-danger dropdown-menu-right"
+            aria-labelledby="navbarDropdown"
+          >
+            <table class="table table-sm m-0">
+              <tbody>
+                <tr>
+                  <td colspan="2" class="border-0">品名</td>
+                  <td class="border-0">單價</td>
+                  <td class="border-0"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="align-middle">
+                    Made in UK - Titanium Combi -
+                  </td>
+                  <td class="align-middle">$4,980</td>
+                  <td class="text-right align-middle">
+                    <a href="#" class="text-muted"
+                      ><i class="fas fa-times"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="align-middle">
+                    Made in UK - Titanium Combi -
+                  </td>
+                  <td class="align-middle">$4,980</td>
+                  <td class="text-right align-middle">
+                    <a href="#" class="text-muted"
+                      ><i class="fas fa-times"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"></td>
+                  <td>總計：</td>
+                  <td>$4,980</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="checkout-1.html" class="btn btn-sm btn-block btn-danger"
+              >購物車結帳</a
+            >
+          </div>
+        </li>
+      </ul>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item mr-4 active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="store.html">Store</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header
+      id="carouselExampleSlidesOnly"
+      class="carousel slide carousel-fade position-relative"
+      data-ride="carousel"
+    >
+    <div class="carousel-caption">
+      <small>SCROLL</small>
+    </div> 
+
+      <ol class="carousel-indicators animate__animated animate__fadeInDown animate__infinite">
+        <i class="fas fa-angle-down"></i>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="banner"
+            style="
+              background-image: url('../image/luis-quintero-6PVoaIXqJxA-unsplash.jpg');
+            "
+          ></div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="banner"
+            style="
+              background-image: url('../image/nicolas-ladino-silva-kq2dX9QjLNs-unsplash.jpg');
+            "
+          ></div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="banner"
+            style="
+              background-image: url('https://upload.cc/i1/2021/01/21/HXnvQS.jpg');
+            "
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-white">
+      <div class="container py-5 hot">
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="m-0 mb-1 mt-5">熱門推薦</h3>
+          <h4 class="mb-5">Recommendation</h4>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide d-flex flex-column"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <a href="product.html" target="_blank">
+                <img
+                  class="w-100"
+                  style="object-fit: cover; object-position: 50% 25%"
+                  src="./image/prateek-katyal-Lu_OVy61lzQ-unsplash.jpg"
+                  alt=""
+                />
+                <div class="swiper-body pt-3">
+                  <p class="card-text">
+                    Made in UK <br />
+                    -Titanium Combi-
+                  </p>
+                  <strong class="font-weight-bold">NTD 4,980</strong>
+                </div>
+              </a>
+            </div>
+            <div
+              class="swiper-slide d-flex flex-column"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <a href="product.html" target="_blank">
+                <img
+                  class="w-100"
+                  style="object-fit: cover; object-position: 50% 25%"
+                  src="./image/prateek-katyal-Lu_OVy61lzQ-unsplash.jpg"
+                  alt=""
+                />
+                <div class="swiper-body pt-3">
+                  <p class="card-text">
+                    Made in UK <br />
+                    -Titanium Combi-
+                  </p>
+                  <strong class="font-weight-bold">NTD 4,980</strong>
+                </div>
+              </a>
+            </div>
+            <div
+              class="swiper-slide d-flex flex-column"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+            >
+              <a href="product.html" target="_blank">
+                <img
+                  class="w-100"
+                  style="object-fit: cover; object-position: 50% 25%"
+                  src="./image/prateek-katyal-Lu_OVy61lzQ-unsplash.jpg"
+                  alt=""
+                />
+                <div class="swiper-body pt-3">
+                  <p class="card-text">
+                    Made in UK <br />
+                    -Titanium Combi-
+                  </p>
+                  <strong class="font-weight-bold">NTD 4,980</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-white"></div>
+        </div>
+        <div
+          class="d-flex justify-content-end mt-3"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="button hvr-icon-forward">
+            <a
+              href="products.html"
+              class="text-danger btn btn-sm-block px-3 border-0"
+            >
+              View More <i class="fas fa-arrow-circle-right hvr-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light column">
+      <div class="container column-box">
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-md-6 col-12 column-text">
+            <div class="mb-lg-5">
+              <h3>框型簡介</h3>
+              <h4>Types Of Frames</h4>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-6 pb-4">
+                <a href="products.html" class="text-muted">
+                  <div class="card border-0">
+                    <img
+                      src="https://jp.owndays.com/images/frame-types/square.svg"
+                      class="card-img-top pt-3 px-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <small
+                        class="card-text d-flex flex-cloum justify-content-center text-center"
+                      >
+                        方型
+                        <br />
+                        簡潔俐落風格
+                      </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-6 pb-4">
+                <a href="products.html" class="text-muted">
+                  <div class="card border-0">
+                    <img
+                      src="https://jp.owndays.com/images/frame-types/round.svg"
+                      class="card-img-top pt-3 px-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <small
+                        class="card-text d-flex flex-cloum justify-content-center text-center"
+                      >
+                        圓框款
+                        <br />
+                        清新柔和風格
+                      </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-6 pb-4">
+                <a href="products.html" class="text-muted">
+                  <div class="card border-0">
+                    <img
+                      src="https://jp.owndays.com/images/frame-types/oval.svg"
+                      class="card-img-top pt-3 px-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <small
+                        class="card-text d-flex flex-cloum justify-content-center text-center"
+                      >
+                        橢圓款
+                        <br />
+                        清新柔和風格
+                      </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-6">
+                <a href="products.html" class="text-muted">
+                  <div class="card border-0">
+                    <img
+                      src="https://jp.owndays.com/images/frame-types/wellington.svg"
+                      class="card-img-top pt-3 px-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <small
+                        class="card-text d-flex flex-cloum justify-content-center text-center"
+                      >
+                        威靈頓
+                        <br />
+                        經典風格
+                      </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-6">
+                <a href="products.html" class="text-muted">
+                  <div class="card border-0">
+                    <img
+                      src="https://jp.owndays.com/images/frame-types/boston.svg"
+                      class="card-img-top pt-3 px-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <small
+                        class="card-text d-flex flex-cloum justify-content-center text-center"
+                      >
+                        波士頓
+                        <br />
+                        流行時尚風格
+                      </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-6">
+                <a href="products.html" class="text-muted">
+                  <div class="card border-0">
+                    <img
+                      src="https://jp.owndays.com/images/frame-types/other.svg"
+                      class="card-img-top pt-3 px-4"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <small
+                        class="card-text d-flex flex-cloum justify-content-center text-center"
+                      >
+                        其他
+                        <br />
+                        個性風格等
+                      </small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div
+              class="column-parallax-img"
+              style="
+                background-image: url(./image/maks-styazhkin-fbL3HzVHFOo-unsplash.jpg);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white">
+      <div class="container py-5">
+        <div class="row pb-2">
+          <div
+            class="col-6 col-md-4 py-5 d-flex justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="media media-index">
+              <img
+                src="https://static.gotoo.cloud/jins-official/icon/icon_index_tokyodesign.svg"
+                class="mr-3"
+                alt=""
+              />
+              <div class="media-body">
+                <p>所有鏡框<br />英國設計</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 py-5 d-flex justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="media media-index">
+              <img
+                class="mr-3"
+                src="https://static.gotoo.cloud/jins-official/icon/icon_index_0yen.svg"
+                alt=""
+              />
+              <div class="media-body">
+                <p>無論任何度數<br />追加費用都是0元</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 py-5 d-flex justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="media media-index">
+              <img
+                class="align-self-center mr-3"
+                src="https://static.gotoo.cloud/jins-official/icon/icon_index_quality.svg"
+                alt=""
+              />
+              <div class="media-body">
+                <p>無論何處製造<br />堅持嚴守優良品質</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 py-5 d-flex justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="media media-index">
+              <img
+                class="mr-3"
+                src="https://static.gotoo.cloud/jins-official/icon/icon_index_delivery.svg"
+                alt=""
+              />
+              <div class="media-body">
+                <p>當日<br />交件服務</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 py-5 d-flex justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="media media-index">
+              <img
+                src="https://static.gotoo.cloud/jins-official/icon/icon_index_service.svg"
+                class="mr-3"
+                alt=""
+              />
+              <div class="media-body">
+                <p>讓您『安心』<br />充實可靠的售後服務</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-4 py-5 d-flex justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="media media-index">
+              <img
+                src="https://static.gotoo.cloud/jins-official/icon/icon_index_lens.svg"
+                class="mr-3"
+                alt=""
+              />
+              <div class="media-body">
+                <p>薄型非球面鏡片<br />為標準配備</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light column">
+      <div class="container column-box">
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-md-6 col-12">
+            <div
+              class="column-parallax-img-2"
+              style="
+                background-image: url(./image/nigel-tadyanehondo-3k5cAmxjXl4-unsplash.jpg);
+              "
+            ></div>
+          </div>
+          <div class="col-md-6 col-12 column-text">
+            <div class="mb-lg-5">
+              <h3>門市資訊</h3>
+              <h4>Store Information</h4>
+            </div>
+            <div class="text-muted">
+              <p class="mb-3">
+                台北市新北區桃園路二段142號
+                <br />
+                02-0987-6543
+                <br />
+                營業時間：週一～週日：11:00～22:00
+              </p>
+              <a
+                href="https://goo.gl/maps/PDLMJMom1iYzhjXZ8"
+                target="_blank"
+                class="btn btn-outline-secondary"
+              >
+                觀看地圖
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-muted">
+      <div
+        class="container d-flex justify-content-between align-items-center footer-phone py-2"
+      >
+        <p class="m-0">© 2020 NAVBAR All Rights Reserved.</p>
+        <ul class="d-flex list-unstyled m-0">
+          <li>
+            <a
+              href="https://codepen.io/etapmobo"
+              target="_blank"
+              class="text-muted mx-3"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/yunhsi"
+              target="_blank"
+              class="text-muted mx-3"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/etapmobo"
+              target="_blank"
+              class="text-muted mx-3"
+              ><i class="fab fa-line"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="go_top">
+      <i class="fas fa-chevron-up"></i>
+      <small>TOP</small>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>

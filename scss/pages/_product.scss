@@ -1,0 +1,10 @@
+
+
+.img-product{
+    @include pad{
+        height: 380px !important;
+    }
+    @include phone{
+        height: 350px !important;
+    }
+}

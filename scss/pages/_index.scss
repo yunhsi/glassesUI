@@ -1,0 +1,125 @@
+@import '../helper/mixins';
+.carousel-indicators ,.carousel-caption{
+  color: rgba(255,255,255,.7);
+  letter-spacing: 2px;
+}
+
+.carousel-item{
+  .banner{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.hot{
+	h4 {
+		font-size: 20px;
+		@include pad{
+		  font-size: 0.9rem;
+		  margin-bottom: 20px !important;
+		}
+	}
+  h3 {
+    font-size: 36px;
+    @include pad{
+      font-size: 1.9rem;
+    }
+  }
+}
+
+.button{
+	border-radius: 3px;
+	text-align: center;
+	&:hover{
+		background-color: $danger;
+		a{
+			color: #fff !important;
+		}
+	}
+	@include phone{
+		width: 100%;
+	}
+}
+
+.column {
+  background-color: $light;
+  padding: 7rem 0;
+  @include phone{
+	  padding: 5rem 0;
+	}
+	.column-box {
+	  position: relative;
+	  .column-text {
+		line-height: 2;
+		h4 {
+		  font-size: 20px;
+		  @include pad{
+			font-size: 0.9rem;
+			margin-bottom: 20px !important;
+		  }
+		}
+		h3 {
+		  font-size: 36px;
+		  @include pad{
+			font-size: 1.9rem;
+		  }
+		}
+		.card{
+			transition: ease-in-out .1s;
+			&:hover{
+				opacity: .75;
+			}
+		}
+	  }
+	  .column-parallax-img {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		max-width: 100%;
+		min-height: 100%;
+		@include phone{
+		  height: 500px;
+      margin-top: 30px;
+		}
+	  }
+	  .column-parallax-img-2{
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		max-width: 100%;
+		min-height: 100%;
+		margin-right: 16px;
+		@include phone{
+		  height: 500px;
+		  margin: 0;
+		}
+	  }
+	}
+}
+
+.media-index{
+  text-shadow: 0 0 0.2em #FDC7D7;
+  font-weight: lighter;
+  align-items: center;
+  @include pad{
+    font-size: 12px;
+  }
+  p{
+    margin: 0;
+  }
+  img{
+    @include phone{
+    margin: 0 !important;
+    padding-bottom: 10px;
+    }
+  }
+  @include phone{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+  }
+}
+
+

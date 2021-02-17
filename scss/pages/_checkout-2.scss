@@ -1,0 +1,31 @@
+@import '../helper/mixins';
+
+.checkout-text{
+    @include phone{
+        font-size: 14px;
+    }
+}
+
+.checkout-rwd{
+    @include pad_pro{
+        width: 180px !important;
+    }
+    @include pad{
+        width: 150px !important;
+    }
+}
+
+.text-overflow{
+  display: block;
+  overflow: scroll;
+  white-space: nowrap;
+  &::-webkit-scrollbar{
+    height: 2px;
+  }
+}
+
+form{
+    @include phone{
+        font-size: 14px;
+    }
+}

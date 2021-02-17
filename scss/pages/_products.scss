@@ -1,0 +1,90 @@
+@import '../helper/mixins';
+aside{
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    @include pad{
+        padding: 0 !important;
+    }
+    @include phone{
+        margin: 0px 30px;
+        margin-bottom: 20px;
+        position: static !important;
+    }
+    .accordion{
+        cursor: pointer;
+        input:checked + label{
+            color: #000;
+        }
+    }
+    form{
+        @include pad{
+            font-size: 12px;
+        }
+    }
+    .mark{
+        position: relative;
+        margin-right: 10px;
+        &:after{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            content: "";
+            width: 3px;
+            height: 100%;
+            background-color: $danger;
+        }
+    }
+}
+
+main{
+    @include pad{
+        padding-left: 40px !important;
+    }
+    @include phone{
+        padding: 0px !important;
+    }
+    .card{
+        padding: 20px;
+        height: 100%;
+        text-align: center;
+        &:hover .product-img{
+            opacity: 0.9;
+        }
+        @include phone{
+            padding: 0px ;
+        }
+        .product-img{
+            height: 330px;
+            background-size: cover;
+            background-position: top 25% center;
+            transition:ease-in-out .1s;
+            @include pad_pro{
+                height: 300px;
+            }
+            @include pad{
+                height: 220px;
+            }
+            @include phone{
+                height: 300px;
+            }
+        }
+        .card-body{
+            @include pad{
+                font-size: 14px;
+            }
+        }
+    }
+    .pagination{
+        a{
+            color: $danger;
+        }
+        .active .page-link{
+            background-color: $danger;
+            border-color: $danger;
+        }
+    }
+}
+
+
