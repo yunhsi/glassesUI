@@ -1,4 +1,4 @@
-# glassesUI
+# 電商網站 UI
 ![image](https://upload.cc/i1/2021/08/29/B321uk.png)
 - 使用 Bootstrap + scss 模組化管理頁面
 - Hover.css、Animate.css、AOS、Swiper 套件使用
